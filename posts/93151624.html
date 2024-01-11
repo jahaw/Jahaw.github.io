@@ -1,0 +1,1632 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><div id="myscoll"></div><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>配置项说明 | Jahaw🥝</title><meta name="keywords" content="JavaScript,NodeJs,MySQL,算法,代码,博客,Butterfly,Hexo,Jahaw🥝,"><meta name="author" content="Jahaw🥝"><meta name="copyright" content="Jahaw🥝"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="配置项说明">
+<meta property="og:type" content="article">
+<meta property="og:title" content="配置项说明">
+<meta property="og:url" content="https://jahaw.github.io/posts/93151624.html">
+<meta property="og:site_name" content="Jahaw🥝">
+<meta property="og:description" content="配置项说明">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jahaw.github.io/assets/404_1.jpg">
+<meta property="article:published_time" content="2023-06-18T14:58:30.000Z">
+<meta property="article:modified_time" content="2023-06-19T13:08:51.246Z">
+<meta property="article:author" content="Jahaw🥝">
+<meta property="article:tag" content="JavaScript,NodeJs,MySQL,算法,代码,博客,Butterfly,Hexo,Jahaw🥝,">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jahaw.github.io/assets/404_1.jpg"><link rel="shortcut icon" href="/"><link rel="canonical" href="https://jahaw.github.io/posts/93151624"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+      css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '配置项说明',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-19 21:08:51'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css"><style id="themeColor"></style><style id="rightSide"></style><style id="transPercent"></style><style id="blurNum"></style><style id="settingStyle"></style><span id="fps"></span><style id="defineBg"></style><style id="menu_shadow"></style><svg aria-hidden="true" style="position:absolute; overflow:hidden; width:0; height:0"><symbol id="icon-sun" viewBox="0 0 1024 1024"><path d="M960 512l-128 128v192h-192l-128 128-128-128H192v-192l-128-128 128-128V192h192l128-128 128 128h192v192z" fill="#FFD878" p-id="8420"></path><path d="M736 512a224 224 0 1 0-448 0 224 224 0 1 0 448 0z" fill="#FFE4A9" p-id="8421"></path><path d="M512 109.248L626.752 224H800v173.248L914.752 512 800 626.752V800h-173.248L512 914.752 397.248 800H224v-173.248L109.248 512 224 397.248V224h173.248L512 109.248M512 64l-128 128H192v192l-128 128 128 128v192h192l128 128 128-128h192v-192l128-128-128-128V192h-192l-128-128z" fill="#4D5152" p-id="8422"></path><path d="M512 320c105.888 0 192 86.112 192 192s-86.112 192-192 192-192-86.112-192-192 86.112-192 192-192m0-32a224 224 0 1 0 0 448 224 224 0 0 0 0-448z" fill="#4D5152" p-id="8423"></path></symbol><symbol id="icon-moon" viewBox="0 0 1024 1024"><path d="M611.370667 167.082667a445.013333 445.013333 0 0 1-38.4 161.834666 477.824 477.824 0 0 1-244.736 244.394667 445.141333 445.141333 0 0 1-161.109334 38.058667 85.077333 85.077333 0 0 0-65.066666 135.722666A462.08 462.08 0 1 0 747.093333 102.058667a85.077333 85.077333 0 0 0-135.722666 65.024z" fill="#FFB531" p-id="11345"></path><path d="M329.728 274.133333l35.157333-35.157333a21.333333 21.333333 0 1 0-30.165333-30.165333l-35.157333 35.157333-35.114667-35.157333a21.333333 21.333333 0 0 0-30.165333 30.165333l35.114666 35.157333-35.114666 35.157334a21.333333 21.333333 0 1 0 30.165333 30.165333l35.114667-35.157333 35.157333 35.157333a21.333333 21.333333 0 1 0 30.165333-30.165333z" fill="#030835" p-id="11346"></path></symbol></svg><!-- hexo injector head_end start --><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/animate.min.css" media="print" onload="this.media='screen'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiperstyle.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/font-awesome-animation.min.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/tag_plugins.css" media="defer" onload="this.media='all'"><script src="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@latest/lib/assets/carousel-touch.js"></script><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.3.0"><link rel="alternate" href="/atom.xml" title="Jahaw🥝" type="application/atom+xml">
+</head><body><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><div class="loading-img"></div><div class="loading-image-dot"></div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/02/avatar.webp" onerror="onerror=null;src='/assets/r1.jpg'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">317</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">37</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">35</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-wangye"></use></svg><span class="menu_word" style="font-size:17px"> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/site/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--tongjibiao">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingshalou">                   </use></svg><span class="menu_word" style="font-size:17px"> 旧时光</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/bb/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 唠叨</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于</span></a></li></ul></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Jahaw🥝</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page faa-parent animated-hover" href="/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-home"></use></svg><span class="menu_word" style="font-size:17px"> 首页</span></a></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--article"></use></svg><span class="menu_word" style="font-size:17px"> 文章</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-guidang1">                   </use></svg><span class="menu_word" style="font-size:17px"> 归档</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-sekuaibiaoqian">                   </use></svg><span class="menu_word" style="font-size:17px"> 标签</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-fenlei">                   </use></svg><span class="menu_word" style="font-size:17px"> 分类</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pinweishenghuo"></use></svg><span class="menu_word" style="font-size:17px"> 休闲</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/life/music/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-yinle">                   </use></svg><span class="menu_word" style="font-size:17px"> 八音盒</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/movies/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-dianying1">                   </use></svg><span class="menu_word" style="font-size:17px"> 影院</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/life/games/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-youxishoubing">                   </use></svg><span class="menu_word" style="font-size:17px"> 游戏</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xiangzi"></use></svg><span class="menu_word" style="font-size:17px"> 八宝箱</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/box/gallery/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-tubiaozhizuomoban">                   </use></svg><span class="menu_word" style="font-size:17px"> 画廊</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/animation/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-nvwumao">                   </use></svg><span class="menu_word" style="font-size:17px"> 动画</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/box/nav/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-zhifengche">                   </use></svg><span class="menu_word" style="font-size:17px"> 网址导航</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shejiaoxinxi"></use></svg><span class="menu_word" style="font-size:17px"> 社交</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/social/fcircle/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-pengyouquan">                   </use></svg><span class="menu_word" style="font-size:17px"> 朋友圈</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-liuyan">                   </use></svg><span class="menu_word" style="font-size:17px"> 留言板</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/social/link/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-lianjie">                   </use></svg><span class="menu_word" style="font-size:17px"> 友人帐</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-wangye"></use></svg><span class="menu_word" style="font-size:17px"> 网站</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/site/census/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon--tongjibiao">                   </use></svg><span class="menu_word" style="font-size:17px"> 网站统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/echarts/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-shujutongji1">                   </use></svg><span class="menu_word" style="font-size:17px"> 文章统计</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/site/time/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-xianxingshalou">                   </use></svg><span class="menu_word" style="font-size:17px"> 旧时光</span></a></li></ul></div><div class="menus_item"><a class="site-page group faa-parent animated-hover hide" href="javascript:void(0);"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-maoliang"></use></svg><span class="menu_word" style="font-size:17px"> 个人</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/personal/bb/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-qunliaotian">                   </use></svg><span class="menu_word" style="font-size:17px"> 唠叨</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/love/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-love-sign">                   </use></svg><span class="menu_word" style="font-size:17px"> 恋爱小屋</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/personal/about/"><svg class="menu_icon faa-tada" aria-hidden="true" style="width:1.30em;height:1.30em;vertical-align:-0.15em;fill:currentColor;overflow:hidden;"><use xlink:href="#icon-paperplane">                   </use></svg><span class="menu_word" style="font-size:17px"> 关于</span></a></li></ul></div></div><center id="name-container"><a id="page-name" href="javascript:scrollToTop()">PAGE_NAME</a></center><div id="nav-right"><div id="search-button"><a class="search faa-parent animated-hover" title="检索站内任何你想要的信息"><svg class="faa-tada icon" style="height:24px;width:24px;fill:currentColor;position:relative;top:6px" aria-hidden="true"><use xlink:href="#icon-valentine_-search-love-find-heart"></use></svg><span> 搜索</span></a></div><a class="meihua faa-parent animated-hover" onclick="toggleWinbox()" title="美化设置-自定义你的风格" id="meihua-button"><svg class="faa-tada icon" style="height:26px;width:26px;fill:currentColor;position:relative;top:8px" aria-hidden="true"><use xlink:href="#icon-tupian1"></use></svg></a><a class="sun_moon faa-parent animated-hover" onclick="switchNightMode()" title="浅色和深色模式转换" id="nightmode-button"><svg class="faa-tada" style="height:25px;width:25px;fill:currentColor;position:relative;top:7px" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon">       </use></svg></a><div id="toggle-menu"><a><i class="fas fa-bars fa-fw"></i></a></div></div></div></nav><div id="post-info"><h1 class="post-title">配置项说明</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><svg class="meta_icon post-meta-icon" style="width:30px;height:30px;position:relative;top:10px"><use xlink:href="#icon-rili"></use></svg><span class="post-meta-label">发表于 </span><time class="post-meta-date-created" datetime="2023-06-18T14:58:30.000Z" title="发表于 2023-06-18 22:58:30">2023-06-18</time><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-gengxin1"></use></svg><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-06-19T13:08:51.246Z" title="更新于 2023-06-19 21:08:51">2023-06-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:18px;height:18px;position:relative;top:5px"><use xlink:href="#icon-biaoqian"></use></svg><a class="post-meta-categories" href="/categories/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/">单元测试</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:8px"><use xlink:href="#icon-charuword"></use></svg><span class="post-meta-label">字数总计:</span><span class="word-count">1w</span><span class="post-meta-separator">|</span><svg class="meta_icon post-meta-icon" style="width:20px;height:20px;position:relative;top:5px"><use xlink:href="#icon-shizhong"></use></svg><span class="post-meta-label">阅读时长:</span><span>38分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="配置项说明"><svg class="meta_icon post-meta-icon" style="width:25px;height:25px;position:relative;top:5px"><use xlink:href="#icon-eye"></use></svg><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>文档地址：<a target="_blank" rel="noopener" href="https://jestjs.io/docs/27.x/api">Configuring Jest · Jest</a></p>
+<h2 id="Jest配置">Jest配置</h2>
+<h2 id="automock">automock</h2>
+<blockquote>
+<p>Boolean(默认值：false)</p>
+</blockquote>
+<pre><code>这个配置项用来配置是否将测试文件中所有引入的模块自动变成模拟的模块
+如果开启的话，就测试文件中的模块的实现都会被重新实现，但会保留 Api 接口
+</code></pre>
+<p>比如我们要测试某个模块中的某个函数功能：</p>
+<pre><code>// mod.ts
+module.exports = () =&gt; 1
+
+// index.test.tsx
+const aotoMockFn = require('./mod')
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(aotoMockFn()).toBe(1);
+&#125;)
+</code></pre>
+<p>此时如果我们想测试 aotoMockFn 返回2 的情况，实际情况下就我们需要去改动内部的逻辑和代码，就不太合理</p>
+<p>jest提供了mock 模块的功能，我们将mock一下 mod模块，就可以使用mock 的一些api，比如模拟返回值 <strong>mockReturnValue</strong>：</p>
+<pre><code>// index.test.tsx
+jest.mock('./mod')
+const aotoMockFn = require('./mod')
+
+mockFn.mockReturnValue(2)
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(mockFn()).toBe(2);
+&#125;)
+</code></pre>
+<p>这样就可以很愉快的进行mock 模块了</p>
+<p>这个配置项提供的就是这个功能的全局开关配置，开启之后引入的模块就自动是mock之后的了，无须再在每个测试文件的顶部再执行 jest.mock 之类的mock方法</p>
+<h2 id="bail">bail</h2>
+<blockquote>
+<p>Number | Boolean (默认值：0)</p>
+</blockquote>
+<pre><code>默认情况下，Jest会跑所有的用例并且在结束的时候会把所有的错误信息打印到控制台上
+这个选项可以设置当n个test失败之后停止执行。
+true 等同于 1
+</code></pre>
+<p>文档中所说的**n个tests，**是指文件维度而不是一个case的维度，相关的issue：</p>
+<p><a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/issues/2626">https://github.com/facebook/jest/issues/2626</a></p>
+<h2 id="cacheDirectory-draft">cacheDirectory - draft</h2>
+<blockquote>
+<p>String (默认值：/tmp/<path>)</p>
+</blockquote>
+<pre><code>Jest会先扫描测试用例的依赖树关系生成一些信息并缓存，用来减少用例执行时对文件系统的变动造成的影响
+这个配置可以自定义Jest缓存依赖信息的目录
+</code></pre>
+<p>配置了之后就是生成一些临时文件，这些依赖信息缓存下来之后带来的性能提升具体也还没测过，后面可以测试下</p>
+<h2 id="clearMocks">clearMocks</h2>
+<blockquote>
+<p>Boolean (默认值：false)</p>
+</blockquote>
+<pre><code>每个case执行前会自动清空Jest mock生成函数的 calls、instances、contexts
+相当于在每个case执行前执行一边 jest.clearAllMocks
+</code></pre>
+<p>以calls为例：</p>
+<pre><code>const fn = jest.fn((x) =&gt; &#123;
+  return x
+&#125;)
+
+it('1', () =&gt; &#123;
+  expect(fn(1)).toBe(1)
+  expect(fn(1)).toBe(1)
+  expect(fn(1)).toBe(1)
+  expect(fn.mock.calls.length).toBe(3)
+&#125;)
+
+it('2', () =&gt; &#123;
+  expect(fn(2)).toBe(2)
+  expect(fn.mock.calls.length).toBe(1)
+&#125;)
+</code></pre>
+<p>calls.length 表示调用次数，如果开启clearMock，那么case1执行完成之后，fn被执行的次数就会清空，case2就是对的，反之不会清空，case2中fn的执行次数为4</p>
+<h2 id="collectCoverage">collectCoverage</h2>
+<blockquote>
+<p>Boolean (默认值: false)</p>
+</blockquote>
+<pre><code>控制是否要生成代码覆盖率报告，以及控制台是否打印覆盖率的日志
+</code></pre>
+<p>这个就是开启了之后会生成代码覆盖率的日志和报告，因为每个文件执行的时候会给每个测试文件生成覆盖率收集的文件，所以会显著降低测试速度</p>
+<h2 id="collectCoverageFrom">collectCoverageFrom</h2>
+<blockquote>
+<p>undefined | Array<string> (默认值: undefined)</p>
+</blockquote>
+<pre><code>设置要生成代码覆盖率报告的目录和文件
+格式为遵循 glob pattern 格式的字符串数组
+</code></pre>
+<p>这里面的路径填写的是被测试文件的路径，而不是测试用例的文件的路径</p>
+<h2 id="coverageDirectory">coverageDirectory</h2>
+<blockquote>
+<p>String 默认值（undefined）</p>
+</blockquote>
+<pre><code>覆盖率报告生成的目录(基于项目根路径)
+</code></pre>
+<h2 id="coveragePathIgnorePatterns">coveragePathIgnorePatterns</h2>
+<blockquote>
+<p>Array<string>（默认值：[‘/node_modules/’]）</p>
+</blockquote>
+<pre><code>设置生成代码覆盖率报告要排除的目录和文件
+遵循正则表达式，不支持绝对路径匹配，使用 &lt;rootDir&gt; 来作为项目的根目录字符串，
+防止因为不同的环境造成不同的根路径，导致意外地忽略了所有的文件
+</code></pre>
+<h2 id="coverageReporters">coverageReporters</h2>
+<blockquote>
+<p>Array&lt;string ｜ [string, options]&gt;（默认值：[“clover”, “json”, “lcov”, “text”]）</p>
+</blockquote>
+<pre><code>生成的代码覆盖率报告的文件格式列表
+支持的格式：https://github.com/istanbuljs/istanbuljs/tree/master/packages/istanbul-reports/lib
+</code></pre>
+<h2 id="coverageThreshold">coverageThreshold</h2>
+<blockquote>
+<p>Object （默认值：undefined）</p>
+</blockquote>
+<pre><code>配置代码覆盖率的四个指标阈值：
+- branches：分支覆盖率
+- functions：函数覆盖率
+- lines：行覆盖率
+- statements：声明覆盖率
+</code></pre>
+<p>如果是想全局配置，就配置在global的key下，如果想单独配置某个文件的指标，key值写在符合glob pattern模式的路径key下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-370021749baa4d15d80b4d61928794b5_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='791' height='444'></svg>)</p>
+<h2 id="displayName">displayName</h2>
+<blockquote>
+<p>String | Object （默认值：undefined）</p>
+</blockquote>
+<pre><code>用于自定义当前项目执行用例时打印的标记和颜色
+因为如果一个仓库中有多个项目，可能会有多份配置文件，这样可以更容易区分
+</code></pre>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-102ca4ac1bb23896f2a24aa70fe94e4e_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1396' height='1342'></svg>)</p>
+<h2 id="dependencyExtractor-draft">dependencyExtractor - draft</h2>
+<blockquote>
+<p>String（默认值：undefined）</p>
+</blockquote>
+<pre><code>这个选项可以用来自定义依赖提取
+这个依赖提取的文件必须是一个导出了一个包涵 extract 函数的对象的node模块
+</code></pre>
+<p>看描述是抽取依赖用的，但是我试了没效果，然后不管是debug还是log都没任何反应，也没看到任何解决办法，有个2020的issue一直挂着无人问津：</p>
+<p><a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/issues/10452">How to debug the “extract” method in “dependencyExtractor.js” · Issue #10452 · facebook/jest</a></p>
+<h2 id="errorOnDeprecated-draft">errorOnDeprecated - draft</h2>
+<blockquote>
+<p>Boolean （默认值：false）</p>
+</blockquote>
+<pre><code>配置调用废弃的APIS的时候，是否抛出错误信息
+对后续升级的过程比较有用
+</code></pre>
+<p>这个配置貌似没啥用啊，我试了下下面的demo：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-2234688112813911b8c0b4f9535bb7ce_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='874' height='420'></svg>)</p>
+<p>开启了这个配置项，控制台还是干干净净，也没见到什么错误信息…等大佬们指点下</p>
+<h2 id="fakeTimers">fakeTimers</h2>
+<blockquote>
+<p>String（默认值：real）</p>
+</blockquote>
+<pre><code>是否使用Jest内置的定时器
+针对定时器，在单元测试的环境中不可能和真实的代码环境一样，所以需要使用内置的定时器来帮助我们更灵活的书写单元测试
+这个配置项就是模拟一些定时器的行为，比如跑单测碰到一个定时器，不可能真的等定时器执行的时候再继续执行单测
+</code></pre>
+<p>先用个最简单的例子：</p>
+<pre><code>const fn = jest.fn()
+
+function testTimer () &#123;
+  setTimeout(() =&gt; &#123;
+    fn()
+  &#125;, 3000)
+&#125;
+
+test('test timer', () =&gt; &#123;
+  testTimer();
+  expect(fn).toBeCalled();
+&#125;);
+</code></pre>
+<p>上述例子会返回失败，控制台会给一警告：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-13df51bed911e420d59b012409602b71_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1808' height='144'></svg>)</p>
+<p>使用Jest内置的定时器：</p>
+<pre><code>const fn = jest.fn()
+
+jest.useFakeTimers()
+function testTimer () &#123;
+  setTimeout(() =&gt; &#123;
+    fn()
+  &#125;, 3000)
+&#125;
+
+test('test timer', () =&gt; &#123;
+  testTimer();
+  jest.advanceTimersByTime(3000)
+
+  expect(fn).toBeCalled();
+&#125;);
+</code></pre>
+<p>useFakeTimers 就是生命在当前用例内使用Jest内置的定时器，advanceTimersByTime 是一个配置项，将控制器提前运行一段时间，简而言之，就是Jest的定时器可以让我们受控了，我们可以更加灵活的进行控制</p>
+<p><strong>fakeTimer</strong>这个配置项就是全局的一些配置</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  fakeTimer: &#123;
+    // 是否要使用全局的定时器配置(同上面的 useFakeTimers)
+    enableGlobally?: boolean,
+    // 定时器超前执行的时间（同上面的 advanceTimersByTime）
+    advanceTimers?: boolean | number,
+    // 哪些定时器的Api是不需要使用Jest内置的，具体见官网
+    doNotFake?: Array&lt;FakeableAPI&gt;
+    // 是否要用老的实现（和我们没啥关系，不用管这个配置项）
+    legacyFakeTimers?: boolean,
+    // 设置一个基准的系统时间戳，给内置的计时器用的，默认是Date.now()
+    now?: number,
+    // 暂时没看懂啥意思（先不管吧。。。。）
+    tiemrLimit?: numner
+  &#125;
+&#125;
+</code></pre>
+<p>这里需要注意一小点就是，advanceTimers 这个配置项需要搭配 runAllTimers 才会生效，以上述例子：</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  fakeTimer: &#123;
+    enableGlobally: true
+    advanceTimers: 3000
+  &#125;
+&#125;
+
+// demo.test.ts
+const fn = jest.fn()
+function testTimer () &#123;
+  setTimeout(() =&gt; &#123;
+    fn()
+  &#125;, 3000)
+&#125;
+test('test timer', () =&gt; &#123;
+  testTimer();
+  jest.runAllTimers()
+
+  expect(fn).toBeCalled();
+&#125;);
+</code></pre>
+<p>更详细的用法和Api可以去官网详细了解</p>
+<h2 id="forceCoverageMatch">forceCoverageMatch</h2>
+<blockquote>
+<p>Array<string>（默认值：[‘’]）</p>
+</blockquote>
+<pre><code>设置需要强制生成代码覆盖率报告的文件
+收集代码覆盖率通常会忽略测试的文件，可以通过这个配置项覆盖这种默认行为，并在代码覆盖范围内包含其他被忽略的文件
+</code></pre>
+<p>比如，coveragePathIgnorePatterns 这个配置项配置了exclude的目录和文件，但如果想在这些排除的目录中收集某些文件的覆盖率报告，就可以利用这个配置项进行覆盖</p>
+<h2 id="globals">globals</h2>
+<blockquote>
+<p>Object （默认值：{}）</p>
+</blockquote>
+<pre><code>可以定义一些全局变量，可以通过访问global对象拿到自定义的全局对象
+</code></pre>
+<p>如果我们定义的是引用类型的变量（对象、数组）这些，然后测试过程中改变了引用地址，新的引用是不会在其他测试文件中生效的，也就是每个测试文件中的全局变量都是引用的global的原始值</p>
+<p>另外，配置的变量必须是可序列化的JSON格式，所以，函数就不能声明了，可以使用 setupFIles</p>
+<h2 id="globalSetup">globalSetup</h2>
+<blockquote>
+<p>String （默认值：undefined）</p>
+</blockquote>
+<pre><code>全局注入器，这个选项可以让我们自定义注入全局模块
+可以设置一个setup文件的路径，然后该文件必须导出一个函数（同步异步都行）
+这个函数会在执行用例前触发，收到Jest的两个参数：globalConfig 和 projectConfig
+</code></pre>
+<p>就是更加灵活的注入一些全局变量或者进行一些操作</p>
+<p>比如一些函数，比如一些变量是需要异步注入的等等</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  globalSetup: '&lt;rootDir&gt;/setup.js'
+&#125;
+
+// setup.js
+const fun = () =&gt; &#123;
+  return 1
+&#125;
+module.exports = async function (globalConfig, projectConfig) &#123;
+  // console.log(globalConfig);
+  // console.log(projectConfig);
+  globalThis.fun = fun
+&#125;;
+</code></pre>
+<p>然后在用例中就能获取注入的全局模块了</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-8dbdb22c0b80db495323822a6b828fcd_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1076' height='268'></svg>)</p>
+<h2 id="globalTeardown">globalTeardown</h2>
+<blockquote>
+<p>String （默认值：undefined）</p>
+</blockquote>
+<pre><code>全局拆卸器，这个选项可以让我们
+可以设置一个teardown文件的路径，然后该文件必须导出一个函数（同步异步都行）
+这个函数会在执行用例完成触发，收到Jest的两个参数：globalConfig 和 projectConfig
+</code></pre>
+<p>其实 globalTeardown 和 globalSetup 这两个配置项个人理解就是 Jest 给使用者提供的两个注入全局模块的hooks，我们可以更方便的操控一些全局模块</p>
+<p>比如如果单测涉及到数据库，那么开始的时候我们需要注入数据库的全局变量，然后测试结束之后肯定得关闭数据库的连接，那么注入的过程就可以在setup中操作，断开连接就可以在teardown中操作</p>
+<h2 id="haste">haste</h2>
+<blockquote>
+<p>Object（默认值：undefined）</p>
+</blockquote>
+<pre><code>Jest内置 jest-haste-map 作为文件 爬取/缓存 系统
+这个配置项就是将一些参数透传给这个模块
+</code></pre>
+<p>说实话，刚开始看了半天不知道啥意思，官网文档仅仅就只有一个config表，真的难顶</p>
+<p>后来直接去 <a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/blob/main/packages/jest-haste-map/src/index.ts">jest-haste-map github地址</a> 看了下注释的说明，才算大概理解这个配置项的意思</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic4.zhimg.com/v2-ebded48962816a092d45c183ec831b8b_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1248' height='373'></svg>)</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic4.zhimg.com/v2-1d9c7f473d9241e453a27bd0ce01d5f3_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1107' height='432'></svg>)</p>
+<p>第一张图说明了 jest-haste-map 的作用：</p>
+<p>当我们执行用例的时候，如果项目的文件数量非常巨大，热更新模式下，每次执行用例都去扫描文件的话是非常损耗性能的，利用 <strong>Haste Map</strong>（加速图？不知道怎么翻译，就按照英文好了）来提升性能就非常重要了</p>
+<p>当启动jest的时候，大多数任务都被 I/O 阻塞</p>
+<p>如果要在热更新时修改文件，脚手架都要遍历一次项目文件，非常损耗性能。特别在一些文件特别多的巨石应用中，电脑分分钟就卡得动不了</p>
+<h2 id="injectGlobals">injectGlobals</h2>
+<blockquote>
+<p>Boolean（默认值：true）</p>
+</blockquote>
+<pre><code>是否将Jest的全局变量（例如：it test expect...）注入到 global 环境中
+如果关闭，这些变量需要我们手动引入
+</code></pre>
+<p>如果关闭：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-6ed3b9f2cd6222720ad12d5735fbf2f1_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1762' height='378'></svg>)</p>
+<p>所以需要手动引入，官网示例代码是用esm的方式引入的，在没有进行一些配置之前，是有问题的，可以改成CommonJS的方式引入来验证：</p>
+<pre><code>const &#123; it, expect &#125; = require('@jest/globals');
+
+it('1', () =&gt; &#123;
+  expect(3).toBe(3)
+&#125;)
+</code></pre>
+<h2 id="maxConcurrency">maxConcurrency</h2>
+<blockquote>
+<p>Number（默认值：5）</p>
+</blockquote>
+<pre><code>用来限制 test.concurrent 模式下的测试并发数
+超过该限制的用例都会排队，并在有用例完成释放之后继续执行
+</code></pre>
+<p>前提需要大概了解下 test.concurrent 的作用，简单的来说就是可以并发进行一些异步函数的测试，举个例子：</p>
+<pre><code>it.concurrent(&quot;test&quot;, () =&gt; &#123;
+  return new Promise((resolve) =&gt; &#123;
+    setTimeout(() =&gt; &#123;
+      expect(1 + 2).toBe(3)
+      resolve(true)
+    &#125;, 1 * 1000)
+  &#125;)
+&#125;, 5000)
+</code></pre>
+<p>concurrent模式下接受三个参数，第一个同样是用例名称，第二个是一个异步函数，第三个则是超时时间，当异步函数执行的时间超过超时时间时，会报错并取消，默认是5秒：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-68b46ad965b8e9ad8242923a1660abfa_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1576' height='476'></svg>)</p>
+<p>可以进行一个测试，上述用例拷贝5份，然后配置 maxConcurrency 先为2，执行用例：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-7c1580baeb92e4e945b6c141472959b1_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1534' height='320'></svg>)</p>
+<p>可以看到 2、4两个用例是并发执行的，并没有消耗时间，总的时常也是3s而不是5s</p>
+<p>再把 maxConcurrency 设置为5：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-d7e1b83d4118d8b9804d244a06e164e0_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1832' height='330'></svg>)</p>
+<p>结果显而易见了</p>
+<h2 id="moduleDirectories">moduleDirectories</h2>
+<blockquote>
+<p>Array<string>（默认值：[“node_modules”]）</p>
+</blockquote>
+<p>定义优先加载的依赖的目录路径，比如，同时在 node_modules 和 自定义一个目录 my_modules 中，同时创建一个mod的模块：</p>
+<pre><code>// node_modules/mod/index.js
+module.exports = 1;
+
+// node_modules/mod/package.json
+&#123;
+  &quot;name&quot;: &quot;mod&quot;,
+  &quot;files&quot;: [
+    &quot;index.js&quot;
+  ]
+&#125;
+
+
+// my_modules/mod/index.js
+module.exports = 2;
+
+// my_modules/mod/package.json
+&#123;
+  &quot;name&quot;: &quot;mod&quot;,
+  &quot;files&quot;: [
+    &quot;index.js&quot;
+  ]
+&#125;
+</code></pre>
+<p>然后创建一个简单的用例，看看不同顺序的配置引用的模块的区别：</p>
+<pre><code>const a = require('mod')
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(a + 1).toBe(3)
+&#125;)
+</code></pre>
+<p>node_modules配置在前，由于优先使用node_modules中的mod模块，所以值为2，用例不通过：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic4.zhimg.com/v2-9b8373f7a5f76660a63d307dbabaf7ff_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1138' height='140'></svg>)</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-2289c19c1fd1037ce0a3c68e966a41e9_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1878' height='430'></svg>)</p>
+<p>my_modules配置在前，则优先使用my_modules中的mod模块，所以值为3，用例通过</p>
+<h2 id="moduleFileExtensions">moduleFileExtensions</h2>
+<blockquote>
+<p>Array<string>（默认值: [“js”, “mjs”, “cjs”, “jsx”, “ts”, “tsx”, “json”, “node”]）</p>
+</blockquote>
+<p>作用类似于webpack的extensions配置，当 import / require 没有指定文件后缀时，Jest将从上述配置的数组中从左到右查找扩展名</p>
+<pre><code>// 1.test.tsx
+const add = require('./add')
+
+it('test', () =&gt; &#123;
+  expect(add(1, 2)).toBe(3);
+&#125;);
+
+// add.tsx
+module.exports = function(x, y) &#123;
+  return x + y;
+&#125;
+
+// jest.config.js
+module.exports = &#123;
+  moduleFileExtensions: [&quot;js&quot;]
+&#125;;
+</code></pre>
+<p>执行用例，会提示找不到找不到用例：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-948bf589f497a7e94fd611f5c3445b4c_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1552' height='222'></svg>)</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  moduleFileExtensions: [&quot;js&quot;, &quot;tsx&quot;]
+&#125;;
+</code></pre>
+<p>则运行正常：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic4.zhimg.com/v2-78cea0c02640fdd263751b9e9767712b_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1456' height='254'></svg>)</p>
+<h2 id="moduleNameMapper">moduleNameMapper</h2>
+<blockquote>
+<p>Object（默认值：null）</p>
+</blockquote>
+<pre><code>一个 从正则表达式到允许存根资源的模块名称或模块名称数组 的映射，
+比如单独的图片或者样式模块
+</code></pre>
+<p>简而言之就是对一些模块的代理处理</p>
+<p>以下面的例子来说，我们先定义一个模块，为了好区分正则，以cjs后缀结尾：</p>
+<pre><code>// origin.cjs
+module.exports = &#123;
+  a: 1
+&#125;;
+</code></pre>
+<p>然后写一个简单的用例测试下：</p>
+<pre><code>const obj = require('./origin.cjs');
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(obj.a).toBe(1);
+&#125;)
+</code></pre>
+<p>这个时候我们再写一个处理函数，作用也很简单，就是当我们获取对象某个key的值的时候，返回的就是这个key：</p>
+<pre><code>// idObj.js
+var idObj = new Proxy(&#123;&#125;, &#123;
+  get: function getter(target, key) &#123;
+    return key;
+  &#125;
+&#125;);
+
+module.exports = idObj;
+</code></pre>
+<p>再配置一下moduleNameMapper:</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  moduleNameMapper: &#123;
+    '\\.(cjs)$': '&lt;rootDir&gt;/moduleNameMapper/idObj.js',
+  &#125;
+&#125;;
+</code></pre>
+<p>当使用cjs后缀的模块时，都使用idObj代理处理一下。这个时候再执行原来的用例就会报错了，实际上被处理了之后，断言的值应该是key值，也就是a，可以自行验证一下</p>
+<p>By the way，上述那个idObj.js，实际上就是 <a href="https://link.zhihu.com/?target=https%3A//www.npmjs.com/package/identity-obj-proxy">identity-obj-proxy</a> 的源码简易版</p>
+<p>这个配置项作用的话就是加快用例的执行速度，一些模块比如图片、样式啥的在执行用例的时候并不需要真正去加载，代理一下即可</p>
+<h2 id="modulePathIgnorePatterns">modulePathIgnorePatterns</h2>
+<blockquote>
+<p>Arrary<string> （默认值： []）</p>
+</blockquote>
+<pre><code>在这些路径之前所有与模块路径匹配的正则字符串数组对模块加载器被认为是 “可见的”。
+如果给定的模块路径与任何模式匹配，则它在测试环境中将不支持被 require()
+</code></pre>
+<p>功能上来说就是可以忽略一些目录下的测试文件，同样举个例子：</p>
+<pre><code>// index.test.tsx
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(1).toBe(1);
+&#125;)
+
+// index1.test.tsx
+it(&quot;test2&quot;, () =&gt; &#123;
+  expect(2).toBe(2);
+&#125;)
+
+// jest.config.js
+module.exports = &#123;
+
+  modulePathIgnorePatterns: [
+    '&lt;rootDir&gt;/modulePathIgnorePatterns/index.test.tsx'
+  ]
+&#125;;
+</code></pre>
+<p>执行用例，就只会执行index1这个用例。</p>
+<p>但是后面还有一个配置项 testPathIgnorePatterns 也是相同的功能，目前不是很清楚两者的主要区别是啥。</p>
+<p>看了一下主要的描述区别是，testPathIgnorePatterns是skip，而 modulePathIgnorePatterns 的描述是：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-c60516b4d6320f16caf2db8c19ab590c_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='485' height='38'></svg>)</p>
+<p>期待评论区能给我解释一波。。。</p>
+<h2 id="modulePaths">modulePaths</h2>
+<blockquote>
+<p>Array<string>（默认值：[]）</p>
+</blockquote>
+<pre><code>一个可选的用来设置 NODE_PATH 环境变量的配置
+值为一个用来表示需要模块额外去查找的路径的绝对路径的数组
+</code></pre>
+<p>node默认引入模块是去查找node_modules下的模块，这个配置项可以配置一些别的查找路径。简单举个例子：</p>
+<pre><code>// 根路径下建立目录 customModule/index.ts
+module.exports = 1;
+
+// index.test.ts
+const customModule = require('customModule');
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(customModule).toBe(1);
+&#125;)
+</code></pre>
+<p>node_modules中并没有customModule这个模块，这个时候require肯定是报错的。加上配置：</p>
+<pre><code>// jest.config.js
+modulePaths: [
+   '&lt;rootDir&gt;/'
+]
+</code></pre>
+<p>告诉Jest还可以从根路径下找找，再跑一遍用例，正常pass</p>
+<h2 id="notify">notify</h2>
+<blockquote>
+<p>Boolean （默认值：false）</p>
+</blockquote>
+<pre><code>是否激活系统的提示，需要额外安装依赖 node-notifier
+</code></pre>
+<p>要注意的就是需要去开启通知权限，以mac系统为例，要开启terminal-notifier的通知权限</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-ad529e4dee88500eb0c171ecd5e58f19_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='726' height='132'></svg>)</p>
+<h2 id="notifyMode">notifyMode</h2>
+<blockquote>
+<p>String （默认值：failure-change）</p>
+</blockquote>
+<pre><code>如果 nofity 配置项开启，可以通过这个依赖项配置什么情况下会进行系统通知
+默认有如下模式：
+- always：总是会发
+- failure: 用例测试失败时候发
+- success: 用例成功的时候发
+- change: 用例状态改变的时候发
+- success-change: 用例通过或者失败的时候发
+- failure-change: 用例失败或者通过的时候发
+</code></pre>
+<p>有个很坑的地方就是，在jest.config.json里配置这个不生效，命令行里配置 --notifyMode 就是正常的，看了下，原因是这个issue：<br>
+<a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/issues/8826">https://github.com/facebook/jest/issues/8826</a></p>
+<p>解决是这个issue：<br>
+<a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/pull/9924">Move all default values into `jest-config` by ghostd · Pull Request #9924 · facebook/jest</a></p>
+<h2 id="preset">preset</h2>
+<blockquote>
+<p>String （默认值：undefined）</p>
+</blockquote>
+<pre><code>配置预设文件的路径
+可以通过配置一些基本的配置，集成到jest.config.js中
+预设文件的命名必须是：jest-preset.json | jest-preset.js | jest-preset.cjs | jest-preset.mjs
+预设文件的路径可以是文件的绝对路径，也可以是根目录包含该文件的目录路径
+</code></pre>
+<p>这个配置项就是可以用来集成一些共用的配置项</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  preset: '&lt;rootDir&gt;/preset' // 如果根目录包含了预设的文件，只需要写到根目录即可
+&#125;
+
+// &lt;rootDir&gt;/preset/jest-preset.js
+module.exports = &#123;
+  displayName: '哈哈'
+&#125;
+</code></pre>
+<p>上面的例子就继承了preset中的 diaplayName，所以执行用例的时候会有”哈哈“标识</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-4e1ff701232c9c04c7b7b9edff7cd97e_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1734' height='108'></svg>)</p>
+<h2 id="prettierPath">prettierPath</h2>
+<blockquote>
+<p>String（默认值：undefined）</p>
+</blockquote>
+<pre><code>设置 prettier配置文件 的路径
+</code></pre>
+<p>当使用 toMatchInlineSnapshot 的时候，可以配置一些prettier的规范，比如缩进啥的。我理解下来应该就是这个意思。</p>
+<p>但是使用的时候直接就报错了：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-3aadd73a74e4597f0909495521ec6008_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1330' height='316'></svg>)</p>
+<p>搜了好久也没找到答案，期待大佬们指点一波</p>
+<h2 id="resetMocks">resetMocks</h2>
+<blockquote>
+<p>Boolean（默认值：false）</p>
+</blockquote>
+<pre><code>每个case执行前自动重置mock的数据
+这将导致任何 mocks 的fake实现被删除，而且不会保留它们的初始实现
+</code></pre>
+<p>同样用一个简单的例子来说明：</p>
+<pre><code>const resetMocksFn = jest.fn(() =&gt; 1)
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(resetMocksFn()).toBe(1);
+&#125;)
+
+it(&quot;test2&quot;, () =&gt; &#123;
+  resetMocksFn.mockReturnValue(2)
+  expect(resetMocksFn()).toBe(2);
+&#125;)
+</code></pre>
+<p>如果不开启 resetMocks 的话，那么一切正常，然后我们开启这个配置：</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  resetMocks: true
+&#125;;
+</code></pre>
+<p>再跑一次用例发现第一个case挂了：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-e329ac276792424066389f0005e7136e_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1730' height='482'></svg>)</p>
+<p>结果期望的是1，但收到的却是undefined，所以报错了</p>
+<p>这个配置项就是能重置所有的 mock（包括原始的实现），比之前介绍过的clearMock更彻底，作用类似于在beforeEach这个hook里，执行了一遍 <strong>jest.resetAllMocks</strong> 这个函数</p>
+<h2 id="restoreMocks">restoreMocks</h2>
+<blockquote>
+<p>Boolean（默认值：false）</p>
+</blockquote>
+<p>就不翻译了，作用上来说也是清除mock的fake实现，但是不像resetMock那么彻底，顾名思义就是会保留原始的实现，而且只有在通过 <strong>jest.spyOn</strong> mock的时候才会生效</p>
+<p>同样用个简单的例子：</p>
+<pre><code>const restoreMocksObj = &#123;
+  hello: () =&gt; 'hello'
+&#125;;
+
+const spy = jest.spyOn(restoreMocksObj, 'hello')
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(restoreMocksObj.hello()).toBe('hello');
+&#125;)
+
+it('test2', () =&gt; &#123;
+  spy.mockReturnValue('bye')
+  expect(restoreMocksObj.hello()).toBe('bye');
+&#125;)
+
+it('test3', () =&gt; &#123;
+  expect(restoreMocksObj.hello()).toBe('bye');
+&#125;)
+</code></pre>
+<p>上述例子运行一下一切正常，开启 restoreMocks 配置，再执行一次：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic4.zhimg.com/v2-e34333d6280612cbf74be7d17ab8f10b_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1782' height='416'></svg>)</p>
+<p>hello方法的mock的返回值被恢复回了hello，所以最后一个case没有通过</p>
+<h2 id="resetModules">resetModules</h2>
+<blockquote>
+<p>Boolean（默认值：false）</p>
+</blockquote>
+<pre><code>默认情况下，每个测试文件都有自己独立的模块注册表
+启用 resetModules 可以更进一步在执行每个用例之前重置模块注册表
+这对于为每个测试隔离模块很有用，这样本地模块状态就不会在测试之间发生冲突
+</code></pre>
+<p>这个配置还是挺实用的，一般来说相同的一个测试文件内部的不同用例之间，依赖的模块并不是独立的而是公共的，这就会导致可能在前一次执行用例的时候，更改了某个模块，而后续的一下用例是依赖初始的模块，这个更改就影响了后续的用例的正常执行了</p>
+<pre><code>// mod.ts
+module.exports = &#123;
+  a: 1
+&#125;;
+
+// index.test.tsx
+let mod1, mod2
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  mod1 = require('./mod');
+  expect(mod1.a).toBe(1);
+  mod1.a = 2
+&#125;)
+
+it(&quot;test2&quot;, () =&gt; &#123;
+  mod2 = require('./mod');
+  console.log(mod1 === mod2)
+  expect(mod2.a).toBe(2);
+&#125;)
+</code></pre>
+<p>test2中打印为true，且用例通过，说明默认情况下，每个case是用的同一个模块。此时开启 resetModules，重新执行用例：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-75588a6ff097290da710123e8ffa3534_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2236' height='794'></svg>)</p>
+<p>如图所示，每个case内的模块也是独立不干扰了</p>
+<h2 id="resolver">resolver</h2>
+<blockquote>
+<p>String（默认值：undefined）</p>
+</blockquote>
+<pre><code>这个配置项允许我们自定义一个模块解析器，满足以下两个条件中任何一个即可：
+1、一个函数，接受两个参数，第一个参数为字符串（需要处理的路径），第二个参数为一个配置对象。
+函数需要返回模块的路径，如果模块没有找到则需要抛出错误
+
+2、一个对象，包含 async / sync 中的至少一个属性。
+sync 属性值为第一点中描述的函数
+async 属性值同理，只不过最终的结果需要resolve，异常需要reject
+</code></pre>
+<p>我们可以按照第一点来写一个简单的模块解析器，先进行准备工作：</p>
+<pre><code>// mods/mod.ts
+module.exports = 1
+
+// index.test.tsx
+const mod = require('mod')
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(mod).toBe(1);
+&#125;)
+</code></pre>
+<p>我们就这样执行用例肯定是会报错的，因为node_modules中并没有mod模块，我们的mod模块在同级的mods目录下，所以此时我们自定义一个resolver：</p>
+<pre><code>// resolver.js
+const path = require('path')
+
+module.exports = function(_path, options) &#123;
+  // 当加载到mod时使用处理后的路径
+  if (_path === 'mod') &#123;
+    return path.join(__dirname, 'mods/mod.ts')
+  &#125;
+  
+  // 其他情况使用默认的解析器处理
+  return options.defaultResolver(_path, options)
+&#125;
+
+// jest.config.js
+module.exports = &#123;
+  resolver: '&lt;rootDir&gt;/resolver.js'
+&#125;;
+</code></pre>
+<p>重新执行一次，mod模块就被正常加载了，算是最最基础版的一个模块解析器了</p>
+<p>另外options配置对象中，除了defaultResolver 这个默认解析器的配置外，还有一些其他的数据，需要详细了解的话可以参考下哈</p>
+<pre><code>type ResolverOptions = &#123;
+  /** Directory to begin resolving from. */
+  basedir: string;
+  /** List of export conditions. */
+  conditions?: Array&lt;string&gt;;
+  /** Instance of default resolver. */
+  defaultResolver: (path: string, options: ResolverOptions) =&gt; string;
+  /** List of file extensions to search in order. */
+  extensions?: Array&lt;string&gt;;
+  /** List of directory names to be looked up for modules recursively. */
+  moduleDirectory?: Array&lt;string&gt;;
+  /** List of `require.paths` to use if nothing is found in `node_modules`. */
+  paths?: Array&lt;string&gt;;
+  /** Allows transforming parsed `package.json` contents. */
+  packageFilter?: (pkg: PackageJSON, file: string, dir: string) =&gt; PackageJSON;
+  /** Allows transforms a path within a package. */
+  pathFilter?: (pkg: PackageJSON, path: string, relativePath: string) =&gt; string;
+  /** Current root directory. */
+  rootDir?: string;
+&#125;;
+</code></pre>
+<h2 id="rootDir">rootDir</h2>
+<blockquote>
+<p>String</p>
+</blockquote>
+<p>就是配置<rootDir>根路径的值，默认是jest配置文件所在的目录或者 package.json 文件所在的目录。</p>
+<p>如果前两个文件都没有，那就是取 <strong>pwd</strong> 所获取的工作目录路径的值</p>
+<h2 id="roots">roots</h2>
+<blockquote>
+<p>Array<string>（默认值：[“<rootDir>”]）</p>
+</blockquote>
+<p>类似于webpack的alias配置，可以自行定义多个路径别名：</p>
+<pre><code>roots: [&quot;&lt;rootDir&gt;/src/&quot;, &quot;&lt;rootDir&gt;/tests/&quot;]
+</code></pre>
+<h2 id="runner">runner</h2>
+<blockquote>
+<p>String（默认值：‘jest-runner’）</p>
+</blockquote>
+<p>可以自定义jest配置的运行器，暂时接触不到。。</p>
+<p>有兴趣的旁友们可以自行了解下如何写一个runner</p>
+<h2 id="setupFiles">setupFiles</h2>
+<blockquote>
+<p>Array（默认值：[]）</p>
+</blockquote>
+<p>这个配置之前有提过，可以在进行测试前运行一些代码或者往全局环境中注入一些我们想要的东西，会在每个测试文件执行前执行一次这些配置文件，而且支持异步执行。</p>
+<pre><code>// setUp.js
+global.a = 1;
+
+// index.test.tsx
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(global['a']).toBe(1);
+&#125;)
+
+// jest.config.js
+module.exports = &#123;
+  setupFiles: [
+    '&lt;rootDir&gt;/setupFiles/setUp.js'
+  ]
+&#125;;
+</code></pre>
+<h2 id="setupFilesAfterEnv">setupFilesAfterEnv</h2>
+<blockquote>
+<p>Array（默认值：[]）</p>
+</blockquote>
+<p>作用类似setupFiles就不再细说了，区别就是执行阶段的不同</p>
+<p>setupFiles执行是在测试框架还没准备好前就开始执行，而setupFilesAfterEnv则是在测试框架准备好但还没执行测试文件的阶段开始执行</p>
+<p>这意味着如果我们要跑一些和Jest环境相关的配置代码啥的，那就要在这个配置项中执行了</p>
+<h2 id="sandboxInjectedGlobals-draft">sandboxInjectedGlobals - draft</h2>
+<blockquote>
+<p>Array<String> （默认值：undefined）</p>
+</blockquote>
+<pre><code>测试文件是运行在一个node虚拟机内的，当调用一些global上下文的属性时变慢
+用这个配置项可以定义那些经常需要调用的属性，来加快查找速度
+</code></pre>
+<p>没用到这个配置，尝试了加了下，好像也没有很特殊的感受，可以基本忽略这个配置项 另外，官网note：<strong>如果使用ESM的话，这个配置项无效</strong></p>
+<h2 id="slowTestThreshold">slowTestThreshold</h2>
+<blockquote>
+<p>Number（默认值：5）</p>
+</blockquote>
+<pre><code>配置用例执行较慢的时间阈值，单位为秒
+并会在控制台执行用例的结果中标红展示
+</code></pre>
+<p>个人觉得这个配置的作用是方便我们有针对性地对一些耗时较长的用例进行一些优化。</p>
+<p>构造一个简单的用例，并将 slowTestThreshold 设置为 1：</p>
+<pre><code>// 1.test.ts
+it.concurrent(&quot;test1&quot;, () =&gt; &#123;
+  return new Promise((resolve) =&gt; &#123;
+    setTimeout(() =&gt; &#123;
+      expect(1 + 1).toBe(2)
+      resolve(true)
+    &#125;, 3000)
+  &#125;)
+&#125;)
+
+// jest.config.js
+module.exports = &#123;
+  slowTestThreshold: 1
+&#125;;
+</code></pre>
+<p>展示结果如下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-2ddbd1612bb8930685ea4f6641898bb6_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1582' height='308'></svg>)</p>
+<h2 id="snapshotResolver">snapshotResolver</h2>
+<blockquote>
+<p>String（默认值：undefined）</p>
+</blockquote>
+<pre><code>可以解析测试&lt;-&gt;快照路径的模块的路径
+此配置选项允许您自定义 Jest 在磁盘上存储快照文件的位置
+</code></pre>
+<p>这个配置项我们得先大概了解一下快照测试，简单来说就是：</p>
+<p>当我们对一个组件进行快照测试的时候，第一个版本运行完单测，会在本地生成一份这个组件的快照文件。当我们对这个组件改动重新运行单测后，jest就会和上一份的快照对比，如果本次改动导致了快照发生了变化，jest就会报错并提示</p>
+<p>**快照测试个人理解其实是更注重对比提醒而不是逻辑纠错的作用，**它能让我们可以知道某次改动是否对组件的渲染结果造成了影响</p>
+<p>看一个例子：</p>
+<pre><code>// Link.tsx
+import React, &#123;useState&#125; from 'react';
+
+export default function Link() &#123;
+  const [status, setStatus] = useState(1);
+
+  const href = status === 1 ? 'Href1' : 'Href2'
+  const text = status === 1 ? 'Link1' : &quot;Link2&quot;
+
+  return (
+    &lt;a href=&#123;href&#125;&gt;&#123;text&#125;&lt;/a&gt;
+  );
+&#125;
+
+// 1.test.tsx
+import React from 'react';
+import renderer from 'react-test-renderer';
+import Link from './Link';
+
+it('renders correctly', () =&gt; &#123;
+  const tree = renderer
+    .create(&lt;Link /&gt;)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+&#125;);
+</code></pre>
+<p>运行，由于第一遍没有快照，所以会在同目录下生成一份 __snapshots__/1.test.tsx.snap 的一份快照：</p>
+<pre><code>// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+&lt;a
+  href=&quot;Href1&quot;
+&gt;
+  Link1
+&lt;/a&gt;
+`;
+</code></pre>
+<p>此时如果我们需要对组件进行改动，但不小心改动了status初始的值：</p>
+<pre><code>// Link.tsx
+
+import React, &#123;useState&#125; from 'react';
+
+export default function Link() &#123;
+  const [status] = useState(2);
+
+  const href = status === 1 ? 'Href1' : 'Href2'
+  const text = status === 1 ? 'Link1' : &quot;Link2&quot;
+
+  return (
+    &lt;a href=&#123;href&#125;&gt;&#123;text&#125;&lt;/a&gt;
+  );
+&#125;
+</code></pre>
+<p>这个时候实际上是对组件造成了破坏性的改动，但我们本身并不知道，再执行一遍用例，jest就会和本地的快照进行比对：</p>
+<p>添加图片注释，不超过 140 字（可选）</p>
+<p>通过这个diff过程，就能很清楚知道这次的改动造成的影响。而如果改成2确实是需要的，那就说明上次的快照需要更新，执行一下 <strong>yarn test - u</strong> 即可更新快照</p>
+<p>上述就是对快照测试的一个简单的介绍，然后这个snapshotResolver配置项就是可以配置快照文件的生成路径，例如在上述例子中，默认生成快照文件的路径是 /tests/__snapshots__/1.test.tsx.snap</p>
+<p>如果我们要将快照生成在 /tests/snapshots 目录下，就可以进行如下配置：</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  snapshotResolver: '&lt;rootDir&gt;/resolver.js'
+&#125;;
+
+// resolver.js
+module.exports = &#123;
+  /**
+   * 处理快照文件路径
+   * @param testPath - 测试文件路径
+   * @param snapshotExtension - 快照文件后缀（一般为.snap）
+   * @returns 快照文件路径
+   */
+  resolveSnapshotPath: (testPath, snapshotExtension) =&gt; &#123;
+    return testPath.slice(0, testPath.lastIndexOf('/')) + '/snapshots' + testPath.slice(testPath.lastIndexOf('/')) + snapshotExtension
+  &#125;,
+
+  /**
+   * 处理测试文件路径
+   * @param snapshotFilePath - 快照文件路径
+   * @param snapshotExtension - 快照文件后缀（一般为.snap）
+   * @returns 测试文件路径
+   */
+  resolveTestPath: (snapshotFilePath, snapshotExtension) =&gt; &#123;
+    return snapshotFilePath.replace('/snapshots', '').slice(0, -snapshotExtension.length)
+  &#125;,
+
+  // 一个用来预检resolver功能的路径例子（方便log来测试自己的路径对不对，会被resolveSnapshotPath调用）
+  testPathForConsistencyCheck: 'tests/example.test.js',
+&#125;;
+</code></pre>
+<p>具体的描述已在代码中标注，应该是很详细了，顺带一提这三个属性都是必填，缺失会报错</p>
+<h2 id="snapshotFormat">snapshotFormat</h2>
+<blockquote>
+<p>Object（默认值）</p>
+</blockquote>
+<pre><code>覆盖 pretty-format 的配置
+除了 compareKeys 和 plugins 这两个配置项
+</code></pre>
+<p>首先 <a href="https://link.zhihu.com/?target=https%3A//www.npmjs.com/package/pretty-format">pretty-format</a> 这个库的作用是可以序列化js的类型，我们可以简单跑一个例子：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-ae24dee10693392b5e1d32c3400be6c1_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1820' height='696'></svg>)</p>
+<p>这个模块本身有配置来控制序列化的结果，而jest的这个配置项就是用来覆盖pretty-format这个模块的默认配置的。因为jest的快照测试的时候需要序列化js类型，所以这个参数可以让我们针对一些简单的场景进行配置</p>
+<h2 id="snapshotSerializers">snapshotSerializers</h2>
+<blockquote>
+<p>Array<string>（默认值: []）</p>
+</blockquote>
+<p>序列化器可以是一个非常强大的工具，通过自定义快照输出，您可以专注于对您的测试很重要的细节。它消除了所有不必要的噪音并简化了差异扫描，以查看每次测试运行中的变化</p>
+<p><a href="https://link.zhihu.com/?target=https%3A//medium.com/trabe/snapshot-serializers-in-jest-7b38eca72201">https://medium.com/trabe/snapshot-serializers-in-jest-7b38eca72201</a></p>
+<h2 id="testEnvironment">testEnvironment</h2>
+<blockquote>
+<p>String（默认值：‘node’）</p>
+</blockquote>
+<pre><code>测试的环境：node | jsdom
+默认是node环境，如果需要类似浏览器的环境的话，可以设置为 jsdom
+</code></pre>
+<p>举个简单的例子：</p>
+<pre><code>it(&quot;test env&quot;, () =&gt; &#123;
+  window[&quot;a&quot;] = 1;
+  expect(window[&quot;a&quot;]).toBe(1);
+&#125;)
+</code></pre>
+<p>node环境下没有window变量这样会报错，设置为 jsdom 之后即可正常执行。不过有一注意点是，版本 28之后，jest不再内置 **jest-environment-jsdom，**所以需要自行安装</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-ade9a519a4329746e40d1de450863924_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2054' height='286'></svg>)</p>
+<p>然后，我们还可以自己定义一个模块用于我们的测试环境，这块就后面有机会再详细说明了</p>
+<h2 id="testEnvironmentOptions">testEnvironmentOptions</h2>
+<blockquote>
+<p>Object（默认值：{}）</p>
+</blockquote>
+<pre><code>透传给测试环境的参数
+</code></pre>
+<p>以 jsdom 环境为例，由于 jest-environment-jsdom 是基于 <a href="https://link.zhihu.com/?target=https%3A//github.com/jsdom/jsdom">jsdom</a> 封装的，所以如果想要更改这个环境的一些参数，可以利用这个配置项来修改</p>
+<p>比如我们想修改当前window的url：</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  testEnvironment: 'jsdom',
+  testEnvironmentOptions: &#123;
+    url: 'https://www.google.com/'
+  &#125;
+&#125;
+
+// 1.test.ts
+it(&quot;test env&quot;, () =&gt; &#123;
+  console.log(window.location.href)
+  expect(window.location.href).toBe('https://www.google.com/');
+&#125;)
+</code></pre>
+<p>结果如下：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-30f781440d65bac2e2c2b675b1416ed6_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1904' height='308'></svg>)</p>
+<h2 id="testFailureExitCode">testFailureExitCode</h2>
+<blockquote>
+<p>Number（默认值：1）</p>
+</blockquote>
+<p>自定义当jest执行用例出错时退出的返回码，比如配置为2:</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-15c1e03ce17b1282839be9a3f2990231_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1518' height='462'></svg>)</p>
+<p>需要注意的是，如果Jest本身报错（比如配置出错了），并不会更改这个码</p>
+<h2 id="testPathIgnorePatterns">testPathIgnorePatterns</h2>
+<blockquote>
+<p>Array<string>（默认值：[‘node_modules’]）</p>
+</blockquote>
+<p>这个配置项就是配置一些需要跳过的测试文件的路径，作用和上文提到过的 modulePathIgnorePatterns 配置项作用有点类似，而且值也差不多，此处不再赘述</p>
+<h2 id="transform">transform</h2>
+<blockquote>
+<p>Object&lt;string, pathToTransformer | [pathToTransformer, object]&gt;（默认值：{“\.[jt]sx?$”: “babel-jest”}）</p>
+</blockquote>
+<pre><code>transform配置是一个对象，用于定义在运行测试时，如何转换测试文件。
+
+&quot;\\.[jt]sx?$&quot;：键名表示要转换的文件的文件名的匹配模式。
+&quot;babel-jest&quot;：键值表示使用的转换器的名称
+
+如果你在Jest的配置文件中使用了transform配置，那么Jest在运行测试时会使用babel-jest转换器来转换所有符合&quot;^.+\.jsx?$&quot;这个匹配模式的文件。
+使用transform配置可以帮助你在运行测试时转换你的代码，从而可以使用最新的JavaScript语法进行测试
+</code></pre>
+<p>我们可以利用后面的一个配置项 - transformIgnorePatterns 来进行简单的测试</p>
+<p>transformIgnorePatterns这个配置项配置的是将一些文件忽略，不使用transform的转换器进行转换</p>
+<pre><code>// transform/mod.js
+export default 1
+
+// transform/index.test.tsx
+import mod from './mod';
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(mod).toBe(1);
+&#125;)
+
+// jest.config.js
+module.exports = &#123;
+  transform: &#123;
+    '^.+\.(js|jsx|ts|tsx)$': 'babel-jest',
+  &#125;,
+
+  transformIgnorePatterns: [
+    '&lt;rootDir&gt;/transform/'
+  ]
+&#125;;
+</code></pre>
+<p>我们将transform下的模块不使用babel-jest，执行用例，会报错：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-ba9ff88d311c668a3c064d15621cf436_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2162' height='964'></svg>)</p>
+<p>因为mod模块是使用es模块导出的，而jest默认支持的是commonJS的规范，所以报错告诉我们不支持es的语法（当把mod换成commonJS规范导出之后，是没问题的）</p>
+<p>然后我们把 transformIgnorePatterns 中的配置删除，mod.js 也走babel-jest进行转换，重新执行一遍用例，就正常了</p>
+<p>Jest默认使用babel-jest作为转换器，当然也可以参考这一章来实现一个自定义的 transformer：<a href="https://link.zhihu.com/?target=https%3A//jestjs.io/docs/28.x/code-transformation">Code Transformation · Jest</a></p>
+<h2 id="transformIgnorePatterns">transformIgnorePatterns</h2>
+<blockquote>
+<p>Array<string>（默认值：[“/node_modules/”, “\.pnp\.[^\\/]+$”]）</p>
+</blockquote>
+<p>具体功能在transform小节已经介绍过了，此处不再赘述</p>
+<h2 id="testResultsProcessor">testResultsProcessor</h2>
+<blockquote>
+<p>String（默认值：undefined）</p>
+</blockquote>
+<pre><code>此选项允许使用自定义结果处理器
+这个处理器必须是一个node模块，它导出一个函数
+测试结果的数据参数会作为第一个参数传递给这个函数，需要将这个参数返回
+</code></pre>
+<p>自定义一个结果处理器：</p>
+<pre><code>// resultsProcessor.js
+module.exports = function(config) &#123;
+  console.log(config)
+  const cfg = &#123;
+    ...config
+  &#125;
+
+  return cfg;
+&#125;
+
+// jest.config.js
+module.exports = &#123;
+  testResultsProcessor: '&lt;rootDir&gt;/resultsProcessor.js'
+&#125;;
+</code></pre>
+<p>config就是用例执行完成之后的数据，我们可以在这个函数中，对这些数据进行自定义的处理，比如生成一份自定义的测试报告，或者把这些数据上传到别的系统中进行分析等等</p>
+<p>这个配置的作用有点类似于前面提到过的reporters，但这个处理函数只会在所有用例执行完成之后才会去执行，而reporters不一样，每个独立的测试文件执行完毕之后都会得到一份测试结果</p>
+<h2 id="testRunner">testRunner</h2>
+<blockquote>
+<p>String（默认值：‘jest-circus/runner’）</p>
+</blockquote>
+<pre><code>这个配置项可以支持自定义一个运行器
+</code></pre>
+<p>自定义的运行器需要满足下面的函数结构：</p>
+<pre><code>function testRunner(
+  globalConfig: GlobalConfig,
+  config: ProjectConfig,
+  environment: Environment,
+  runtime: Runtime,
+  testPath: string,
+): Promise&lt;TestResult&gt;;
+</code></pre>
+<p>作用也非常明显，比如可以使用它来执行特定的测试、控制测试的顺序或者执行其他自定义的操作</p>
+<p>具体的实现可以参考下面官方放的一个自定义的运行器（目前暂时还不需要自定义，等需要的时候再去好好研究吧。。。）</p>
+<p><a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/blob/main/packages/jest-jasmine2/src/index.ts">https://github.com/facebook/jest/blob/main/packages/jest-jasmine2/src/index.ts</a></p>
+<h2 id="testSequencer">testSequencer</h2>
+<p>总定义一个排序器，简单的说就是可以控制用例的执行部分和执行顺序</p>
+<p>进行一些简单的准备工作，三个测试文件的名称长度我们都不一样，用于方便给自定义的排序器控制：</p>
+<pre><code>// index.test.tsx
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(1).toBe(1);
+&#125;)
+
+// index1.test.tsx
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(1).toBe(1);
+&#125;)
+
+// index22.test.tsx
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(1).toBe(1);
+&#125;)
+</code></pre>
+<p>配置一下路径：</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  testSequencer: '&lt;rootDir&gt;/sequencer.js'
+&#125;;
+</code></pre>
+<p>定义一个简单的sequencer：</p>
+<pre><code>// sequencer.js
+const Sequencer = require('@jest/test-sequencer').default;
+
+class CustomSequencer extends Sequencer &#123;
+  /**
+   * 通过命令行 --shard=shardIndex/shardCount 来决定执行哪部分的测试文件
+   * 比如 --shard=2/3，意思就是将用例分成3份，执行第二份
+   * shard函数在sort函数前执行
+   */
+  shard(tests, &#123;shardIndex, shardCount&#125;) &#123;
+    const shardSize = Math.ceil(tests.length / shardCount);
+    const shardStart = shardSize * (shardIndex - 1);
+    const shardEnd = shardSize * shardIndex;
+
+    return [...tests].slice(shardStart, shardEnd);
+  &#125;
+
+  /**
+   * 对shard执行后的测试文件进行排序，以确定执行顺序
+   * sort函数在shard函数后执行
+   */
+  sort(tests) &#123;
+    const copyTests = Array.from(tests);
+    const resultTests = copyTests.sort((testA, testB) =&gt; (testA.path.length &gt; testB.path.length ? -1 : 1));
+    return resultTests;
+  &#125;
+&#125;
+
+module.exports = CustomSequencer;
+</code></pre>
+<p>具体的说明在注释中已经写的比较详细了，此时shard函数的作用如注释，就是执行命令行中指定部分的用例，sort函数就是按测试文件的名称长度进行执行</p>
+<p>执行命令：yarn test --shard=1/1，即执行全部的测试文件，执行顺序如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-e76100be6255f0a80c63c4012e511778_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2028' height='120'></svg>)</p>
+<p>执行命令：yarn test --shard=2/3，即执行第二份测试文件，如下图所示：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic1.zhimg.com/v2-38245074613e1c19b2275e6059403ac8_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1474' height='206'></svg>)</p>
+<h2 id="testMatch">testMatch</h2>
+<pre><code>Jest用来检测测试文件的全局匹配表达式。
+默认情况下是获取 __tests__ 目录下的 js/ts/jsx/tsx 文件，以及任何后缀中带有 .test/.spec 的文件
+也会获取 test.js/spec.js
+</code></pre>
+<p>配置哪些文件你是想进行测试的</p>
+<h2 id="testRegex">testRegex</h2>
+<p>作用同testMatch，不过两个配置不要同时定义，否则会报错</p>
+<h2 id="testTimeout">testTimeout</h2>
+<blockquote>
+<p>Number（默认值：5000）</p>
+</blockquote>
+<p><a href="https://link.zhihu.com/?target=https%3A//github.com/facebook/jest/issues/9696">https://github.com/facebook/jest/issues/9696</a></p>
+<h2 id="unmockedModulePathPatterns">unmockedModulePathPatterns</h2>
+<blockquote>
+<p>Array<string>（默认值）</p>
+</blockquote>
+<pre><code>一组用来匹配那些 被引入但是不需要被自动mock的模块的路径的 正则表达式
+如果某个模块匹配了其中的一个规则，那么就不会被自动mock
+</code></pre>
+<p>这个配置项其实场景比较少，因为一般来说我们很少会开启 automock，如果有需要mock的模块，一般也会是在各个测试文件的内部去mock。</p>
+<pre><code>// mod.ts
+module.exports = () =&gt; 1
+
+// mod1.ts
+module.exports = () =&gt; 2
+
+// index.test.tsx
+const mockFn = require('./mod')
+const mockFn1 = require('./mod1')
+
+mockFn.mockReturnValue(3)
+mockFn1.mockReturnValue(4)
+
+it(&quot;test1&quot;, () =&gt; &#123;
+  expect(mockFn()).toBe(3);
+  expect(mockFn1()).toBe(4);
+&#125;)
+
+// jest.config.js
+module.exports = &#123;
+  automock: true
+&#125;;
+</code></pre>
+<p>由于开启了automock，所以此时执行用例是完全正常的。然后我们配置一下unmockedModulePathPatterns，将mod1排除：</p>
+<pre><code>// jest.config.js
+module.exports = &#123;
+  automock: true,
+  unmockedModulePathPatterns: [
+    '&lt;rootDir&gt;/unmockedModulePathPatterns/mod1.ts'
+  ]
+&#125;;
+</code></pre>
+<p>再次执行，则会报错：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic3.zhimg.com/v2-1f1dfe4ea426e605aff2703d14472ade_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='2226' height='468'></svg>)</p>
+<p>而mod还是automock，所以mod没有问题</p>
+<h2 id="verbose">verbose</h2>
+<blockquote>
+<p>Boolean （默认值：false）</p>
+</blockquote>
+<p>就是执行的过程要不要把每个测试文件中的测试用例的状态给打印到控制台上：</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-e66987176239a21b136d99d2255be7b5_b.jpg" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1794' height='400'></svg>)</p>
+<p>开启</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://pic2.zhimg.com/v2-0bc5b5029b5c2c2732af31825bf9f429_b.png" alt=""></p>
+<p>![](data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1764' height='268'></svg>)</p>
+<p>关闭</p>
+<p>只有一个测试文件的话，默认为true</p>
+<h2 id="watchPathIgnorePatterns">watchPathIgnorePatterns</h2>
+<blockquote>
+<p>Array<string> （默认值：[]）</p>
+</blockquote>
+<pre><code>一个正则表达式的路径数组，用来匹配那些不需要在 watch 模式下被重复执行的测试文件
+如果文件路径符合该数组中的某个规则，当这些文件更新的时候不会触发热重载
+
+这些规则是匹配绝对路径的，可以使用 &lt;rootDir&gt;用来表示根路径
+</code></pre>
+<p>当然这个配置项只在 --watch 的模式下才会生效</p>
+<h2 id="watchPlugins">watchPlugins</h2>
+<blockquote>
+<p>Array&lt;String ｜ [String, Object]&gt; （默认值：[]）</p>
+</blockquote>
+<pre><code>自定义使用的监听文件变化的插件数组
+</code></pre>
+<p>用默认的就好了，具体有哪些插件可以去官网中查看</p>
+<h2 id="watchMan">watchMan</h2>
+<blockquote>
+<p>Boolean（默认值：true）</p>
+</blockquote>
+<p>是否使用watchman对文件的更改进行监听</p>
+<h2 id="总结">总结</h2>
+<p>这篇文章写的对自己使用配置的时候的疑惑点都写了比较详细的补充，有些会用例子来说明下（貌似都喜欢看简洁的文章哈哈）</p>
+<p>单测说实话确实是吃力不讨好的事情，一没什么技术难度，二也不会对产出有很大的显性帮助，更难的是个人感觉写单测有个前提条件就是<strong>需要团队稳定</strong>，因为单测也是需要去维护的。很多时候当业务逻辑更改的时候，单测也要同时去修改。变动比较频繁的话，单测就会被遗忘，逐渐没人维护，导致和业务代码偏移越来越大，最后就成鸡肋</p>
+<p>但这玩意儿在后面代码重构或者涉及到大面积改动的时候，太有用了。而且一开始不写，后面再补是非常麻烦的，有时候甚至得先重写下代码才行。<strong>所以如果条件允许，还是建议写了</strong></p>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>配置项说明</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://jahaw.github.io/posts/93151624.html">https://jahaw.github.io/posts/93151624.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Jahaw🥝</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2023-06-18</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2023-06-19</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"></div></div><link rel="stylesheet" href="/css/coin.css" media="defer" onload="this.media='all'"/><div class="post-reward"><button class="tip-button reward-button"><span class="tip-button__text">投喂作者</span><div class="coin-wrapper"><div class="coin"><div class="coin__middle"></div><div class="coin__back"></div><div class="coin__front"></div></div></div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/01/04/2.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/04/2.webp" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://tuchuang.voooe.cn/images/2023/01/04/20f8e49805975b8f8.webp" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></button></div><audio id="coinAudio" src="https://npm.elemecdn.com/akilar-candyassets@1.0.36/audio/aowu.m4a"></audio><script defer="defer" src="/js/coin.js"></script><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/posts/923c3c89.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/404_1.jpg" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">常用函数</div></div></a></div><div class="next-post pull-right"><a href="/posts/d7c881ac.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/404_1.jpg" onerror="onerror=null;src='/assets/r2.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Express</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><svg class="meta_icon" style="width:22px;height:22px;position:relative;top:5px"><use xlink:href="#icon-mulu1"></use></svg><span style="font-weight:bold">目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Jest%E9%85%8D%E7%BD%AE"><span class="toc-text">Jest配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#automock"><span class="toc-text">automock</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bail"><span class="toc-text">bail</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#cacheDirectory-draft"><span class="toc-text">cacheDirectory - draft</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#clearMocks"><span class="toc-text">clearMocks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#collectCoverage"><span class="toc-text">collectCoverage</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#collectCoverageFrom"><span class="toc-text">collectCoverageFrom</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#coverageDirectory"><span class="toc-text">coverageDirectory</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#coveragePathIgnorePatterns"><span class="toc-text">coveragePathIgnorePatterns</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#coverageReporters"><span class="toc-text">coverageReporters</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#coverageThreshold"><span class="toc-text">coverageThreshold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#displayName"><span class="toc-text">displayName</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dependencyExtractor-draft"><span class="toc-text">dependencyExtractor - draft</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#errorOnDeprecated-draft"><span class="toc-text">errorOnDeprecated - draft</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fakeTimers"><span class="toc-text">fakeTimers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#forceCoverageMatch"><span class="toc-text">forceCoverageMatch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#globals"><span class="toc-text">globals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#globalSetup"><span class="toc-text">globalSetup</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#globalTeardown"><span class="toc-text">globalTeardown</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#haste"><span class="toc-text">haste</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#injectGlobals"><span class="toc-text">injectGlobals</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#maxConcurrency"><span class="toc-text">maxConcurrency</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#moduleDirectories"><span class="toc-text">moduleDirectories</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#moduleFileExtensions"><span class="toc-text">moduleFileExtensions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#moduleNameMapper"><span class="toc-text">moduleNameMapper</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#modulePathIgnorePatterns"><span class="toc-text">modulePathIgnorePatterns</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#modulePaths"><span class="toc-text">modulePaths</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#notify"><span class="toc-text">notify</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#notifyMode"><span class="toc-text">notifyMode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#preset"><span class="toc-text">preset</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#prettierPath"><span class="toc-text">prettierPath</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#resetMocks"><span class="toc-text">resetMocks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#restoreMocks"><span class="toc-text">restoreMocks</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#resetModules"><span class="toc-text">resetModules</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#resolver"><span class="toc-text">resolver</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#rootDir"><span class="toc-text">rootDir</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#roots"><span class="toc-text">roots</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#runner"><span class="toc-text">runner</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#setupFiles"><span class="toc-text">setupFiles</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#setupFilesAfterEnv"><span class="toc-text">setupFilesAfterEnv</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sandboxInjectedGlobals-draft"><span class="toc-text">sandboxInjectedGlobals - draft</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#slowTestThreshold"><span class="toc-text">slowTestThreshold</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#snapshotResolver"><span class="toc-text">snapshotResolver</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#snapshotFormat"><span class="toc-text">snapshotFormat</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#snapshotSerializers"><span class="toc-text">snapshotSerializers</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testEnvironment"><span class="toc-text">testEnvironment</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testEnvironmentOptions"><span class="toc-text">testEnvironmentOptions</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testFailureExitCode"><span class="toc-text">testFailureExitCode</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testPathIgnorePatterns"><span class="toc-text">testPathIgnorePatterns</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#transform"><span class="toc-text">transform</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#transformIgnorePatterns"><span class="toc-text">transformIgnorePatterns</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testResultsProcessor"><span class="toc-text">testResultsProcessor</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testRunner"><span class="toc-text">testRunner</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testSequencer"><span class="toc-text">testSequencer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testMatch"><span class="toc-text">testMatch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testRegex"><span class="toc-text">testRegex</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#testTimeout"><span class="toc-text">testTimeout</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#unmockedModulePathPatterns"><span class="toc-text">unmockedModulePathPatterns</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#verbose"><span class="toc-text">verbose</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#watchPathIgnorePatterns"><span class="toc-text">watchPathIgnorePatterns</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#watchPlugins"><span class="toc-text">watchPlugins</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#watchMan"><span class="toc-text">watchMan</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li></ol></div></div></div></div></main><footer id="footer" style="background-color: transparent;"><div id="footer-wrap"><div id="ft"><div class="ft-item-1"><div class="t-top"><div class="t-t-l"><p class="ft-t t-l-t">格言🧬</p><div class="bg-ad"><div>再看看那个光点，它就在这里，这是家园，这是我们 —— 你所爱的每一个人，你认识的一个人，你听说过的每一个人，曾经有过的每一个人，都在它上面度过他们的一生✨</div><div class="btn-xz-box"><a class="btn-xz" target="_blank" rel="noopener" href="https://stellarium.org/">点击开启星辰之旅</a></div></div></div><div class="t-t-r"><p class="ft-t t-l-t">猜你想看💡</p><ul class="ft-links"><li><a href="/posts/eec9786.html">魔改指南</a><a href="/box/nav/">网址导航</a></li><li><a href="/social/link/">我的朋友</a><a href="/comments/">留点什么</a></li><li><a href="/personal/about/">关于作者</a><a href="/archives/">文章归档</a></li><li><a href="/categories/">文章分类</a><a href="/tags/">文章标签</a></li><li><a href="/box/Gallery/">我的画廊</a><a href="/personal/bb/">我的唠叨</a></li><li><a href="/site/time/">建设进程</a><a href="/site/census/">网站统计</a></li></ul></div></div></div><div class="ft-item-2"><p class="ft-t">推荐友链⌛</p><div class="ft-img-group"><div class="img-group-item"><a target="_blank" rel="noopener" href="https://www.jahaw.cc/" title="jahaw🥝"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/60e5d4e39da7c077.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div><div class="img-group-item"><a href="javascript:void(0)" title="广告位招租"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://lskypro.acozycotage.net/LightPicture/2022/12/65307a5828af6790.webp" alt=""/></a></div></div></div></div><div class="copyright"><span><b>&copy;2022-2024</b></span><span><b>&nbsp;&nbsp;By Jahaw🥝</b></span></div><div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" title="博客框架为Hexo_v6.3.0"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Frame-Hexo-blue.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" title="主题版本Butterfly_v4.3.1"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Theme-Butterfly-6513df.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" title="本站采用多线部署，主线路托管于Vercel"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Hosted-Vercel-brightgreen.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://user.51.la/" style="margin-inline:5px" title="本站数据分析得益于51la技术支持"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/Analytics-51la-3db1eb.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://icp.gov.moe/?keyword=20226665" style="margin-inline:5px" title="本站已加入萌ICP豪华套餐，萌ICP备20226665号"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/萌ICP备-20226665-fe1384.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://bitiful.dogecast.com/buckets" style="margin-inline:5px" title="本网站经Service Worker分流至缤纷云对象存储"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Bucket-缤纷云-9c62da.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://www.netdun.net/" style="margin-inline:5px" title="本站使用网盾星球提供CDN加速与防护"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://sourcebucket.s3.ladydaily.com/badge/CDN-网盾星球-fff2cc.svg" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" title="本网站源码由Github提供存储仓库"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src=" https://sourcebucket.s3.ladydaily.com/badge/Source-Github-d021d6.svg" alt=""/></a></p></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><a class="icon-V hidden" onclick="switchNightMode()" title="浅色和深色模式转换"><svg width="25" height="25" viewBox="0 0 1024 1024"><use id="modeicon" xlink:href="#icon-moon"></use></svg></a><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button><button class="share" type="button" title="右键模式" onclick="changeMouseMode()"><i class="fas fa-mouse"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog right_side"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button class="share" type="button" title="分享链接" onclick="share()"><i class="fas fa-share-nodes"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i><span id="percent">0<span>%</span></span></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div class="js-pjax" id="rightMenu"><div class="rightMenu-group rightMenu-small"><a class="rightMenu-item" href="javascript:window.history.back();"><i class="fa fa-arrow-left"></i></a><a class="rightMenu-item" href="javascript:window.history.forward();"><i class="fa fa-arrow-right"></i></a><a class="rightMenu-item" href="javascript:window.location.reload();"><i class="fa fa-refresh"></i></a><a class="rightMenu-item" href="javascript:rmf.scrollToTop();"><i class="fa fa-arrow-up"></i></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-text"><a class="rightMenu-item" href="javascript:rmf.copySelect();"><i class="fa fa-copy"></i><span>复制</span></a><a class="rightMenu-item" href="javascript:window.open(&quot;https://www.baidu.com/s?wd=&quot;+window.getSelection().toString());window.location.reload();"><i class="fa fa-search"></i><span>百度搜索</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-too"><a class="rightMenu-item" href="javascript:window.open(window.getSelection().toString());window.location.reload();"><i class="fa fa-link"></i><span>转到链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-paste"><a class="rightMenu-item" href="javascript:rmf.paste()"><i class="fa fa-copy"></i><span>粘贴</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-post"><a class="rightMenu-item" href="#post-comment"><i class="fas fa-comment"></i><span>空降评论</span></a><a class="rightMenu-item" href="javascript:rmf.copyWordsLink()"><i class="fa fa-link"></i><span>复制本文地址</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-to"><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>新窗口打开</span></a><a class="rightMenu-item" id="menu-too" href="javascript:rmf.open()"><i class="fa fa-link"></i><span>转到链接</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制链接</span></a></div><div class="rightMenu-group rightMenu-line hide" id="menu-img"><a class="rightMenu-item" href="javascript:rmf.saveAs()"><i class="fa fa-download"></i><span>保存图片</span></a><a class="rightMenu-item" href="javascript:rmf.openWithNewTab()"><i class="fa fa-window-restore"></i><span>在新窗口打开</span></a><a class="rightMenu-item" href="javascript:rmf.copyLink()"><i class="fa fa-copy"></i><span>复制图片链接</span></a></div><div class="rightMenu-group rightMenu-line"><a class="rightMenu-item" href="javascript:randomPost()"><i class="fa fa-paper-plane"></i><span>随便逛逛</span></a><a class="rightMenu-item" href="javascript:switchNightMode();"><i class="fa fa-moon"></i><span>昼夜切换</span></a><a class="rightMenu-item" href="/personal/about/"><i class="fa fa-info-circle"></i><span>关于博客</span></a><a class="rightMenu-item" href="javascript:toggleWinbox();"><i class="fas fa-cog"></i><span>美化设置</span></a><a class="rightMenu-item" href="javascript:rmf.fullScreen();"><i class="fas fa-expand"></i><span>切换全屏</span></a><a class="rightMenu-item" href="javascript:window.print();"><i class="fa-solid fa-print"></i><span>打印页面</span></a></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.umd.min.js"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/instant.page/5.1.0/instantpage.min.js" type="module"></script><script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/vanilla-lazyload/17.3.1/lazyload.iife.min.js"></script><script src="/js/search/local-search.js"></script><script async="async">var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())
+setTimeout(function(){preloader.endLoading();}, 5000);
+document.getElementById('loading-box').addEventListener('click',()=> {preloader.endLoading()})</script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>(()=>{
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: '',
+      region: '',
+      onCommentLoaded: function () {
+        btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: '',
+      region: '',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(function (res) {
+      countELement.innerText = res[0].count
+    }).catch(function (err) {
+      console.error(err);
+    });
+  }
+
+  const runFn = () => {
+    init()
+    
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') {
+      setTimeout(runFn,0)
+      return
+    } 
+    getScript('https://cdn.staticfile.org/twikoo/1.6.8/twikoo.all.min.js').then(runFn)
+  }
+
+  if ('Twikoo' === 'Twikoo' || !true) {
+    if (true) btf.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else loadTwikoo()
+  } else {
+    window.loadOtherComment = () => {
+      loadTwikoo()
+    }
+  }
+})()</script></div><script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script><script async src="https://cdn1.tianli0.top/npm/vue@2.6.14/dist/vue.min.js"></script><script async src="https://cdn1.tianli0.top/npm/element-ui@2.15.6/lib/index.js"></script><script async src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script><script defer type="text/javascript" src="https://cdn1.tianli0.top/npm/sweetalert2@8.19.0/dist/sweetalert2.all.js"></script><script async src="//npm.elemecdn.com/pace-js@1.2.4/pace.min.js"></script><script defer src="https://cdn1.tianli0.top/gh/nextapps-de/winbox/dist/winbox.bundle.min.js"></script><script async src="//at.alicdn.com/t/c/font_3586335_hsivh70x0fm.js"></script><script async src="//at.alicdn.com/t/c/font_3636804_gr02jmjr3y9.js"></script><script async src="//at.alicdn.com/t/c/font_3612150_kfv55xn3u2g.js"></script><script async src="https://cdn.wpon.cn/2022-sucai/Gold-ingot.js"></script><canvas id="universe"></canvas><canvas id="snow"></canvas><script defer src="/js/fomal.js"></script><link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/aplayer/1.10.1/APlayer.min.js"></script><script src="https://cdn1.tianli0.top/npm/js-heo@1.0.12/metingjs/Meting.min.js"></script><script src="https://lib.baomitu.com/pjax/0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show","#web_bg",".js-pjax","#bibi","body > title","#app","#tag-echarts","#posts-echart","#categories-echarts"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --> <script data-pjax>if(document.getElementById('recent-posts') && (location.pathname ==='/'|| '/' ==='all')){
+    var parent = document.getElementById('recent-posts');
+    var child = '<div class="recent-post-item" style="width:100%;height: auto"><div id="catalog_magnet"><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/数据结构/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍡 Jahawの数据结构 (5)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/计算机基础/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍼 Jahawの计算机基础笔记 (6)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/Java/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍟 JahawのJava笔记 (7)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/NodeJS/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎈 JahawのNodeJS笔记 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/数据库/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍨 Jahawの数据库笔记 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/演示/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🤷‍♂️ Jahawの案例演示笔记 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/版本管理/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの版本管理笔记 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/包管理工具/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">📒 Jahawの包管理工具笔记 (7)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/编程规范/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの编程规范 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/单元测试/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの单元测试 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/报表设计器/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの报表设计器 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/表单设计器/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの表单设计器 (5)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/DSL/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 JahawのDSL (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/埋点与监控/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの埋点与监控 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/桌面应用/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの桌面应用 (1)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/工程化/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの工程化 (32)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/工具类程序/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの工具类程序 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/K8S集群/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 JahawのK8S集群 (7)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/可视化/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの可视化 (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/临时记录/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの临时记录 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/浏览器/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの浏览器 (7)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/容器/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの容器 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/Web认证/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 JahawのWeb认证 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/Monorepo/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 JahawのMonorepo (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/AI/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 JahawのAI (2)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/软考/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの软考 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/微前端/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの微前端 (5)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/小程序/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🍥 Jahawの小程序 (4)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item"><a class="magnet_link" href="https://jahaw.github.io/categories/云/"><div class="magnet_link_context" style=""><span style="font-weight:500;flex:1">🎪 Jahawの云 (3)</span><span style="padding:0px 4px;border-radius: 8px;"><i class="fas fa-arrow-circle-right"></i></span></div></a></div><div class="magnet_item" style="visibility: hidden"></div><a class="magnet_link_more"  href="https://jahaw.github.io/categories/" style="flex:1;text-align: center;margin-bottom: 10px;">查看更多...</a></div></div>';
+    console.log('已挂载magnet')
+    parent.insertAdjacentHTML("afterbegin",child)}
+     </script><style>#catalog_magnet{flex-wrap: wrap;display: flex;width:100%;justify-content:space-between;padding: 10px 10px 0 10px;align-content: flex-start;}.magnet_item{flex-basis: calc(33.333333333333336% - 5px);background: #e9e9e9;margin-bottom: 10px;border-radius: 8px;transition: all 0.2s ease-in-out;}.magnet_item:hover{background: var(--text-bg-hover)}.magnet_link_more{color:#555}.magnet_link{color:black}.magnet_link:hover{color:white}@media screen and (max-width: 600px) {.magnet_item {flex-basis: 100%;}}.magnet_link_context{display:flex;padding: 10px;font-size:16px;transition: all 0.2s ease-in-out;}.magnet_link_context:hover{padding: 10px 20px;}</style>
+    <style></style><div class="js-pjax"><script async="async">var arr = document.getElementsByClassName('recent-post-item');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script><script async="async">var arr = document.getElementsByClassName('card-widget');
+for(var i = 0;i<arr.length;i++){
+    arr[i].classList.add('wow');
+    arr[i].classList.add('animate__zoomIn');
+    arr[i].setAttribute('data-wow-duration', '2s');
+    arr[i].setAttribute('data-wow-delay', '200ms');
+    arr[i].setAttribute('data-wow-offset', '30');
+    arr[i].setAttribute('data-wow-iteration', '1');
+  }</script></div><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow.min.js"></script><script defer src="https://npm.elemecdn.com/hexo-butterfly-wowjs/lib/wow_init.js"></script><script data-pjax>
+  function butterfly_swiper_injector_config(){
+    var parent_div_git = document.getElementById('recent-posts');
+    var item_html = '<div class="recent-post-item" style="height: auto;width: 100%"><div class="blog-slider swiper-container-fade swiper-container-horizontal" id="swiper_container"><div class="blog-slider__wrp swiper-wrapper" style="transition-duration: 0ms;"><div class="blog-slider__item swiper-slide" style="width: 750px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;"><a class="blog-slider__img" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt=""><img width="48" height="48" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/assets/404_1.jpg" alt="" onerror="this.src=https://unpkg.zhimg.com/akilar-candyassets/image/loading.gif; this.onerror = null;"/></a><div class="blog-slider__content"><span class="blog-slider__code">2022-08-09</span><a class="blog-slider__title" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">Markdown语法与外挂标签写法汇总</a><div class="blog-slider__text">🥧本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询</div><a class="blog-slider__button" onclick="pjax.loadUrl(&quot;posts/2013454d.html&quot;);" href="javascript:void(0);" alt="">详情       </a></div></div></div><div class="blog-slider__pagination swiper-pagination-clickable swiper-pagination-bullets"></div></div></div>';
+    console.log('已挂载butterfly_swiper')
+    parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+    }
+  var elist = 'undefined'.split(',');
+  var cpage = location.pathname;
+  var epage = '/';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_swiper_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_swiper_injector_config();
+  }
+  </script><script defer src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js"></script><script defer data-pjax src="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper_init.js"></script><script data-pjax src="https://npm.elemecdn.com/hexo-filter-gitcalendar/lib/gitcalendar.js"></script><script data-pjax>
+  function gitcalendar_injector_config(){
+      var parent_div_git = document.getElementById('gitZone');
+      var item_html = '<div class="recent-post-item" id="gitcalendarBar" style="width:100%;height:auto;padding:10px;"><style>#git_container{min-height: 320px}@media screen and (max-width:650px) {#git_container{min-height: 0px}}</style><div id="git_loading" style="width:10%;height:100%;margin:0 auto;display: block;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animatetransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animatetransform></path></svg><style>#git_container{display: none;}</style></div><div id="git_container"></div></div>';
+      parent_div_git.insertAdjacentHTML("afterbegin",item_html)
+      console.log('已挂载gitcalendar')
+      }
+
+    if( document.getElementById('gitZone') && (location.pathname ==='/site/census/'|| '/site/census/' ==='all')){
+        gitcalendar_injector_config()
+        GitCalendarInit("/api?null",['#d9e0df', '#c6e0dc', '#a8dcd4', '#9adcd2', '#89ded1', '#77e0d0', '#5fdecb', '#47dcc6', '#39dcc3', '#1fdabe', '#00dab9'],'null')
+    }
+  </script><!-- hexo injector body_end end --></body></html>
